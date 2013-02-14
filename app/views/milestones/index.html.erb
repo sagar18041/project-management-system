@@ -1,0 +1,38 @@
+<center><h1>Milestones</h1></center>
+<p align="right"><%= link_to "New Milestone", new_project_milestone_path(@project)%></p>
+<table border=1 class="rows">
+	<thead>
+	<tr>
+		<th>Milestone Id</th>
+		<th>Milestone Name</th>
+		<th>Start Date</th>
+		<th>End Date</th>
+		<th>Status</th>
+		<th>Project Name</th>
+		<th>Operations</th>
+	</tr>
+	</thead>
+	<tbody>
+	<%@milestones.each do |milestone|%>
+		<tr>
+			<td><%=milestone.id%></td>
+			<td><%=milestone.name%></td>
+			<td><%=milestone.start_date.strftime("%d/%m/%Y")%></td>
+			<td><%=milestone.end_date.strftime("%d/%m/%Y")%></td>
+			<td><%=milestone.status%>
+				<%if milestone.status!="Finished"%>
+					<%=link_to "Finish",finish_milestone_project_milestone_path(@project,milestone)%> 
+					
+				<%end%>
+			</td>
+			<td><%=@project.project_name%></td>
+			<td>
+				<%=link_to "Show",project_milestone_path(@project,milestone) %>
+				<%=link_to "Edit",edit_project_milestone_path(@project,milestone) %>
+				<%=link_to "Delete",project_milestone_path(@project,milestone), :method => "delete" %>
+				<%=link_to "Task",milestone_tasks_path(milestone) %>
+			</td>		
+		</tr>
+	</tbody>
+	<%end%>	
+</table>

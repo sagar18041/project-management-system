@@ -1,0 +1,26 @@
+<center><h1>User</h1></center>
+<table border=1>
+	<tr>
+		<th>User Id</th> <td><%=@user.id%></td>
+	</tr>
+	<tr>	
+		<th>User Name</th><td><%=@user.user_name%></td>
+	</tr>
+	<tr>
+		<th>Address</th><td><%=@user.user_address%></td>
+	</tr>
+	<tr>
+  <th>Users</th>
+   <ul>
+  	<td><%@user.projects.each do |p| %>
+     	<li>
+       	<%= p.project_name %><br>
+      </li>
+   	  <% end %>
+    </td>
+  </ul>
+ 	</tr>
+	<tr>
+		<th colspan=2><%=link_to "Back",users_path%></th>
+	</tr>
+</table>

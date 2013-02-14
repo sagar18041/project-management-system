@@ -1,0 +1,39 @@
+<center><h1>Task</h1></center>
+<p align="right"><%= link_to "New Task", new_milestone_task_path(@milestone)%></p>
+<table border=1 class="rows">
+	<thead>
+	<tr>
+		<th>Task Id</th>
+		<th>Task Name</th>
+		<th>Start Date</th>
+		<th>End Date</th>
+		<th>Status</th>
+		<th>Milestone Name</th>
+		<th>User Name</th>
+		<th>Operations</th>
+	</tr>
+</thead>
+<tbody>
+	<%@tasks.each do |task|%>
+		<tr>
+			<td><%=task.id%></td>
+			<td><%=task.name%></td>
+			<td><%=task.start_date.strftime("%d/%m/%Y")%></td>
+			<td><%=task.end_date.strftime("%d/%m/%Y")%></td>
+			<td><%=task.status%>
+				<%if task.status!="Finished"%>
+					<%=link_to "Finish",finish_task_milestone_task_path(@milestone,task)%> 
+				<%end%>
+			</td>
+			<td><%=@milestone.name%></td>
+			<%u=User.find(task.user_id)%>
+			<td><%=u.user_name%></td>
+			<td>
+				<%=link_to "Show",milestone_task_path(@milestone,task) %>
+				<%=link_to "Edit",edit_milestone_task_path(@milestone,task) %>
+				<%=link_to "Delete",milestone_task_path(@milestone,task),:method => "delete" %>
+			</td>
+		</tr>
+	</tbody>
+	<%end%>	
+</table>

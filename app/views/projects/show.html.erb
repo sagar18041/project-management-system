@@ -1,0 +1,32 @@
+<center><h1>Project</h1></center>
+<table border=1>
+	<tr>
+		<th>Project Id</th> <td><%=@project.id%></td>
+	</tr>
+	<tr>
+		<th>Project Name</th><td><%=@project.project_name%></td>
+	</tr>
+	<tr>
+		<th>Description</th><td><%=@project.project_description%></td>
+	</tr>
+	<tr>
+		<th>Start Date</th><td><%=@project.start_date%></td>
+	</tr>
+	<tr>
+		<th>End Date</th><td><%=@project.end_date%></td>
+	</tr>
+	<tr>
+  	<th>Users</th>
+    <ul>
+   		<td><%@project.users.each do |u| %>
+       	<li>
+        	<%= u.user_name %><br>
+        </li>
+    	  <% end %>
+      </td>
+    </ul>
+ 	</tr>
+	<tr>
+	<th colspan=2><%=link_to "Back",projects_path%></th>
+	</tr>
+</table>

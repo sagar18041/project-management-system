@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Project MilestoneTask</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+
+
+</head>
+<body> 
+	<div class="container_12">
+		<div id="heading">
+			<div class="grid_12">
+				<div class="grid_2">
+					<%=image_tag("pms.jpg",:size=>"100x100", :mouseover => "/assets/rails.png")%>
+				</div>
+				<div class="grid_10" >
+					<h1>Project Management System</h1>
+				</div>
+			</div>		
+			
+			<div class="clear"></div>
+			<div class='grid_12 navbar'>	
+			<ul class="nav">
+				<div class="prefix_8 grid_2">
+					<li><%= link_to "Project",projects_path%></li>
+				</div>
+				<div class="grid_2">
+					<li><%= link_to "User",users_path%></li>
+				</div>
+			</ul>
+		</div>
+		</div>
+
+	<div class="clear"></div>
+	<%=flash[:notice]%>
+	<%= yield %>
+	</div>
+</body>
+</html>
+
+
