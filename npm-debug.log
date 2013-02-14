@@ -1,0 +1,558 @@
+info it worked if it ends with ok
+verbose cli [ 'node', '/usr/bin/npm', 'install', 'grunt', '-g' ]
+info using npm@1.1.4
+info using node@v0.6.12
+verbose config file /home/unbuntu/.npmrc
+verbose config file /usr/etc/npmrc
+verbose config file /usr/share/npm/npmrc
+verbose cache add [ 'grunt', null ]
+silly cache add: name, spec, args [ undefined, 'grunt', [ 'grunt', null ] ]
+verbose parsed url { pathname: 'grunt', path: 'grunt', href: 'grunt' }
+verbose addNamed [ 'grunt', '' ]
+verbose addNamed [ null, '' ]
+silly name, range, hasData [ 'grunt', '', false ]
+verbose raw, before any munging grunt
+verbose url resolving [ 'https://registry.npmjs.org/', './grunt' ]
+verbose url resolved https://registry.npmjs.org/grunt
+http GET https://registry.npmjs.org/grunt
+http 200 https://registry.npmjs.org/grunt
+silly get cb [ 200,
+silly get cb   { vary: 'Accept',
+silly get cb     server: 'CouchDB/1.2.1 (Erlang OTP/R15B)',
+silly get cb     etag: '"6K65KWJ02LA3O92AYBA5FYNCY"',
+silly get cb     date: 'Thu, 14 Feb 2013 08:42:31 GMT',
+silly get cb     'content-type': 'application/json',
+silly get cb     'content-length': '208978' } ]
+verbose mkdir (expected) error ENOENT, no such file or directory '/home/unbuntu/.npm'
+verbose mkdir (expected) error ENOENT, no such file or directory '/home/unbuntu/.npm/grunt'
+verbose mkdir done: /home/unbuntu/.npm/grunt 755
+silly name, range, hasData 2 [ 'grunt', '', true ]
+silly versions [ 'grunt',
+silly versions   [ '0.1.0',
+silly versions     '0.1.1',
+silly versions     '0.1.2',
+silly versions     '0.2.0',
+silly versions     '0.2.1',
+silly versions     '0.2.2',
+silly versions     '0.2.3',
+silly versions     '0.2.4',
+silly versions     '0.2.5',
+silly versions     '0.2.6',
+silly versions     '0.2.7',
+silly versions     '0.2.8',
+silly versions     '0.2.9',
+silly versions     '0.2.10',
+silly versions     '0.2.11',
+silly versions     '0.2.12',
+silly versions     '0.2.13',
+silly versions     '0.2.14',
+silly versions     '0.2.15',
+silly versions     '0.3.0',
+silly versions     '0.3.1',
+silly versions     '0.3.2',
+silly versions     '0.3.3',
+silly versions     '0.3.4',
+silly versions     '0.3.5',
+silly versions     '0.3.6',
+silly versions     '0.3.7',
+silly versions     '0.3.8',
+silly versions     '0.3.9',
+silly versions     '0.3.10',
+silly versions     '0.3.11',
+silly versions     '0.3.12',
+silly versions     '0.3.13a',
+silly versions     '0.3.13',
+silly versions     '0.3.14',
+silly versions     '0.3.15',
+silly versions     '0.3.16',
+silly versions     '0.3.17' ] ]
+verbose bin dist [ '0.6-ares1.7.5-evundefined-openssl1.0.1-v83.7.12.22-linux-ia32-3.2.0-23-generic-pae',
+verbose bin dist   { shasum: 'f2e034d200befd5eeb38ba5c41d4ccd7235fd64d',
+verbose bin dist     tarball: 'http://registry.npmjs.org/grunt/-/grunt-0.3.17.tgz' } ]
+verbose addRemoteTarball [ 'https://registry.npmjs.org/grunt/-/grunt-0.3.17.tgz',
+verbose addRemoteTarball   'f2e034d200befd5eeb38ba5c41d4ccd7235fd64d' ]
+verbose mkdir (expected) error ENOENT, no such file or directory '/tmp/npm-1360831475450'
+verbose mkdir (expected) error ENOENT, no such file or directory '/tmp/npm-1360831475450/1360831475450-0.05167028144933283'
+verbose mkdir done: /tmp/npm-1360831475450/1360831475450-0.05167028144933283 755
+verbose fetch to /tmp/npm-1360831475450/1360831475450-0.05167028144933283/tmp.tgz
+http GET https://registry.npmjs.org/grunt/-/grunt-0.3.17.tgz
+http 200 https://registry.npmjs.org/grunt/-/grunt-0.3.17.tgz
+silly updated sha bytes 40960
+silly updated sha bytes 40960
+silly updated sha bytes 40960
+silly updated sha bytes 40960
+silly updated sha bytes 26389
+info shasum f2e034d200befd5eeb38ba5c41d4ccd7235fd64d
+info shasum /tmp/npm-1360831475450/1360831475450-0.05167028144933283/tmp.tgz
+verbose mkdir (expected) error ENOENT, no such file or directory '/tmp/npm-1360831475450/1360831475450-0.05167028144933283/___package.npm'
+verbose mkdir done: /tmp/npm-1360831475450/1360831475450-0.05167028144933283/___package.npm 755
+verbose unpack_ uid, gid [ undefined, undefined ]
+verbose unpackTarget /tmp/npm-1360831475450/1360831475450-0.05167028144933283/package
+silly gunzTarPerm modes [ '755', '644' ]
+silly afterUntar ok
+silly asyncMap in gTP /tmp/npm-1360831475450/1360831475450-0.05167028144933283/___package.npm/package
+silly asyncMap in gTP /tmp/npm-1360831475450/1360831475450-0.05167028144933283/___package.npm/package/grunt.js
+silly asyncMap in gTP /tmp/npm-1360831475450/1360831475450-0.05167028144933283/___package.npm/package/package.json
+silly asyncMap in gTP /tmp/npm-1360831475450/1360831475450-0.05167028144933283/___package.npm/package/README.md
+silly asyncMap in gTP /tmp/npm-1360831475450/1360831475450-0.05167028144933283/___package.npm/package/LICENSE-MIT
+silly asyncMap in gTP /tmp/npm-1360831475450/1360831475450-0.05167028144933283/___package.npm/package/.npmignore
+silly asyncMap in gTP /tmp/npm-1360831475450/1360831475450-0.05167028144933283/___package.npm/package/docs
+silly asyncMap in gTP /tmp/npm-1360831475450/1360831475450-0.05167028144933283/___package.npm/package/docs/task_qunit.md
+silly asyncMap in gTP /tmp/npm-1360831475450/1360831475450-0.05167028144933283/___package.npm/package/docs/task_init.md
+silly asyncMap in gTP /tmp/npm-1360831475450/1360831475450-0.05167028144933283/___package.npm/package/docs/getting_started.md
+silly asyncMap in gTP /tmp/npm-1360831475450/1360831475450-0.05167028144933283/___package.npm/package/docs/api_config.md
+silly asyncMap in gTP /tmp/npm-1360831475450/1360831475450-0.05167028144933283/___package.npm/package/docs/api_template.md
+silly asyncMap in gTP /tmp/npm-1360831475450/1360831475450-0.05167028144933283/___package.npm/package/docs/example_gruntfiles.md
+silly asyncMap in gTP /tmp/npm-1360831475450/1360831475450-0.05167028144933283/___package.npm/package/docs/api_log.md
+silly asyncMap in gTP /tmp/npm-1360831475450/1360831475450-0.05167028144933283/___package.npm/package/docs/api.md
+silly asyncMap in gTP /tmp/npm-1360831475450/1360831475450-0.05167028144933283/___package.npm/package/docs/api_task.md
+silly asyncMap in gTP /tmp/npm-1360831475450/1360831475450-0.05167028144933283/___package.npm/package/docs/toc.md
+silly asyncMap in gTP /tmp/npm-1360831475450/1360831475450-0.05167028144933283/___package.npm/package/docs/task_lint.md
+silly asyncMap in gTP /tmp/npm-1360831475450/1360831475450-0.05167028144933283/___package.npm/package/docs/plugins.md
+silly asyncMap in gTP /tmp/npm-1360831475450/1360831475450-0.05167028144933283/___package.npm/package/docs/task_min.md
+silly asyncMap in gTP /tmp/npm-1360831475450/1360831475450-0.05167028144933283/___package.npm/package/docs/helpers_directives.md
+silly asyncMap in gTP /tmp/npm-1360831475450/1360831475450-0.05167028144933283/___package.npm/package/docs/task_concat.md
+silly asyncMap in gTP /tmp/npm-1360831475450/1360831475450-0.05167028144933283/___package.npm/package/docs/contributing.md
+silly asyncMap in gTP /tmp/npm-1360831475450/1360831475450-0.05167028144933283/___package.npm/package/docs/README.md
+silly asyncMap in gTP /tmp/npm-1360831475450/1360831475450-0.05167028144933283/___package.npm/package/docs/task_server.md
+silly asyncMap in gTP /tmp/npm-1360831475450/1360831475450-0.05167028144933283/___package.npm/package/docs/api_fail.md
+silly asyncMap in gTP /tmp/npm-1360831475450/1360831475450-0.05167028144933283/___package.npm/package/docs/exit_codes.md
+silly asyncMap in gTP /tmp/npm-1360831475450/1360831475450-0.05167028144933283/___package.npm/package/docs/api_file.md
+silly asyncMap in gTP /tmp/npm-1360831475450/1360831475450-0.05167028144933283/___package.npm/package/docs/api_utils.md
+silly asyncMap in gTP /tmp/npm-1360831475450/1360831475450-0.05167028144933283/___package.npm/package/docs/faq.md
+silly asyncMap in gTP /tmp/npm-1360831475450/1360831475450-0.05167028144933283/___package.npm/package/docs/types_of_tasks.md
+silly asyncMap in gTP /tmp/npm-1360831475450/1360831475450-0.05167028144933283/___package.npm/package/dev
+silly asyncMap in gTP /tmp/npm-1360831475450/1360831475450-0.05167028144933283/___package.npm/package/dev/init.exp
+silly asyncMap in gTP /tmp/npm-1360831475450/1360831475450-0.05167028144933283/___package.npm/package/bin
+silly asyncMap in gTP /tmp/npm-1360831475450/1360831475450-0.05167028144933283/___package.npm/package/bin/grunt
+silly asyncMap in gTP /tmp/npm-1360831475450/1360831475450-0.05167028144933283/___package.npm/package/lib
+silly asyncMap in gTP /tmp/npm-1360831475450/1360831475450-0.05167028144933283/___package.npm/package/lib/grunt.js
+silly asyncMap in gTP /tmp/npm-1360831475450/1360831475450-0.05167028144933283/___package.npm/package/lib/grunt
+silly asyncMap in gTP /tmp/npm-1360831475450/1360831475450-0.05167028144933283/___package.npm/package/lib/grunt/task.js
+silly asyncMap in gTP /tmp/npm-1360831475450/1360831475450-0.05167028144933283/___package.npm/package/lib/grunt/help.js
+silly asyncMap in gTP /tmp/npm-1360831475450/1360831475450-0.05167028144933283/___package.npm/package/lib/grunt/file.js
+silly asyncMap in gTP /tmp/npm-1360831475450/1360831475450-0.05167028144933283/___package.npm/package/lib/grunt/cli.js
+silly asyncMap in gTP /tmp/npm-1360831475450/1360831475450-0.05167028144933283/___package.npm/package/lib/grunt/config.js
+silly asyncMap in gTP /tmp/npm-1360831475450/1360831475450-0.05167028144933283/___package.npm/package/lib/grunt/utils.js
+silly asyncMap in gTP /tmp/npm-1360831475450/1360831475450-0.05167028144933283/___package.npm/package/lib/grunt/option.js
+silly asyncMap in gTP /tmp/npm-1360831475450/1360831475450-0.05167028144933283/___package.npm/package/lib/grunt/template.js
+silly asyncMap in gTP /tmp/npm-1360831475450/1360831475450-0.05167028144933283/___package.npm/package/lib/grunt/fail.js
+silly asyncMap in gTP /tmp/npm-1360831475450/1360831475450-0.05167028144933283/___package.npm/package/lib/grunt/log.js
+silly asyncMap in gTP /tmp/npm-1360831475450/1360831475450-0.05167028144933283/___package.npm/package/lib/util
+silly asyncMap in gTP /tmp/npm-1360831475450/1360831475450-0.05167028144933283/___package.npm/package/lib/util/namespace.js
+silly asyncMap in gTP /tmp/npm-1360831475450/1360831475450-0.05167028144933283/___package.npm/package/lib/util/task.js
+silly asyncMap in gTP /tmp/npm-1360831475450/1360831475450-0.05167028144933283/___package.npm/package/lib/util/findup.js
+silly asyncMap in gTP /tmp/npm-1360831475450/1360831475450-0.05167028144933283/___package.npm/package/test
+silly asyncMap in gTP /tmp/npm-1360831475450/1360831475450-0.05167028144933283/___package.npm/package/test/grunt
+silly asyncMap in gTP /tmp/npm-1360831475450/1360831475450-0.05167028144933283/___package.npm/package/test/grunt/utils_test.js
+silly asyncMap in gTP /tmp/npm-1360831475450/1360831475450-0.05167028144933283/___package.npm/package/test/grunt/file_test.js
+silly asyncMap in gTP /tmp/npm-1360831475450/1360831475450-0.05167028144933283/___package.npm/package/test/grunt/template_test.js
+silly asyncMap in gTP /tmp/npm-1360831475450/1360831475450-0.05167028144933283/___package.npm/package/test/tasks
+silly asyncMap in gTP /tmp/npm-1360831475450/1360831475450-0.05167028144933283/___package.npm/package/test/tasks/init_test.js
+silly asyncMap in gTP /tmp/npm-1360831475450/1360831475450-0.05167028144933283/___package.npm/package/test/tasks/concat_test.js
+silly asyncMap in gTP /tmp/npm-1360831475450/1360831475450-0.05167028144933283/___package.npm/package/test/tasks/misc_test.js
+silly asyncMap in gTP /tmp/npm-1360831475450/1360831475450-0.05167028144933283/___package.npm/package/test/tasks/lint_test.js
+silly asyncMap in gTP /tmp/npm-1360831475450/1360831475450-0.05167028144933283/___package.npm/package/test/fixtures
+silly asyncMap in gTP /tmp/npm-1360831475450/1360831475450-0.05167028144933283/___package.npm/package/test/fixtures/template.txt
+silly asyncMap in gTP /tmp/npm-1360831475450/1360831475450-0.05167028144933283/___package.npm/package/test/fixtures/b.js
+silly asyncMap in gTP /tmp/npm-1360831475450/1360831475450-0.05167028144933283/___package.npm/package/test/fixtures/banner.js
+silly asyncMap in gTP /tmp/npm-1360831475450/1360831475450-0.05167028144933283/___package.npm/package/test/fixtures/octocat.png
+silly asyncMap in gTP /tmp/npm-1360831475450/1360831475450-0.05167028144933283/___package.npm/package/test/fixtures/a.js
+silly asyncMap in gTP /tmp/npm-1360831475450/1360831475450-0.05167028144933283/___package.npm/package/test/fixtures/banner3.js
+silly asyncMap in gTP /tmp/npm-1360831475450/1360831475450-0.05167028144933283/___package.npm/package/test/fixtures/banner2.js
+silly asyncMap in gTP /tmp/npm-1360831475450/1360831475450-0.05167028144933283/___package.npm/package/test/fixtures/lintTest.js
+silly asyncMap in gTP /tmp/npm-1360831475450/1360831475450-0.05167028144933283/___package.npm/package/test/fixtures/test.json
+silly asyncMap in gTP /tmp/npm-1360831475450/1360831475450-0.05167028144933283/___package.npm/package/test/util
+silly asyncMap in gTP /tmp/npm-1360831475450/1360831475450-0.05167028144933283/___package.npm/package/test/util/task_test.js
+silly asyncMap in gTP /tmp/npm-1360831475450/1360831475450-0.05167028144933283/___package.npm/package/test/util/namespace_test.js
+silly asyncMap in gTP /tmp/npm-1360831475450/1360831475450-0.05167028144933283/___package.npm/package/tasks
+silly asyncMap in gTP /tmp/npm-1360831475450/1360831475450-0.05167028144933283/___package.npm/package/tasks/watch.js
+silly asyncMap in gTP /tmp/npm-1360831475450/1360831475450-0.05167028144933283/___package.npm/package/tasks/init.js
+silly asyncMap in gTP /tmp/npm-1360831475450/1360831475450-0.05167028144933283/___package.npm/package/tasks/lint.js
+silly asyncMap in gTP /tmp/npm-1360831475450/1360831475450-0.05167028144933283/___package.npm/package/tasks/min.js
+silly asyncMap in gTP /tmp/npm-1360831475450/1360831475450-0.05167028144933283/___package.npm/package/tasks/qunit.js
+silly asyncMap in gTP /tmp/npm-1360831475450/1360831475450-0.05167028144933283/___package.npm/package/tasks/misc.js
+silly asyncMap in gTP /tmp/npm-1360831475450/1360831475450-0.05167028144933283/___package.npm/package/tasks/concat.js
+silly asyncMap in gTP /tmp/npm-1360831475450/1360831475450-0.05167028144933283/___package.npm/package/tasks/server.js
+silly asyncMap in gTP /tmp/npm-1360831475450/1360831475450-0.05167028144933283/___package.npm/package/tasks/test.js
+silly asyncMap in gTP /tmp/npm-1360831475450/1360831475450-0.05167028144933283/___package.npm/package/tasks/qunit
+silly asyncMap in gTP /tmp/npm-1360831475450/1360831475450-0.05167028144933283/___package.npm/package/tasks/qunit/phantom.js
+silly asyncMap in gTP /tmp/npm-1360831475450/1360831475450-0.05167028144933283/___package.npm/package/tasks/qunit/qunit.js
+silly asyncMap in gTP /tmp/npm-1360831475450/1360831475450-0.05167028144933283/___package.npm/package/tasks/qunit/phantom.json
+silly asyncMap in gTP /tmp/npm-1360831475450/1360831475450-0.05167028144933283/___package.npm/package/tasks/init
+silly asyncMap in gTP /tmp/npm-1360831475450/1360831475450-0.05167028144933283/___package.npm/package/tasks/init/gruntplugin.js
+silly asyncMap in gTP /tmp/npm-1360831475450/1360831475450-0.05167028144933283/___package.npm/package/tasks/init/commonjs.js
+silly asyncMap in gTP /tmp/npm-1360831475450/1360831475450-0.05167028144933283/___package.npm/package/tasks/init/node.js
+silly asyncMap in gTP /tmp/npm-1360831475450/1360831475450-0.05167028144933283/___package.npm/package/tasks/init/gruntfile.js
+silly asyncMap in gTP /tmp/npm-1360831475450/1360831475450-0.05167028144933283/___package.npm/package/tasks/init/jquery.js
+silly asyncMap in gTP /tmp/npm-1360831475450/1360831475450-0.05167028144933283/___package.npm/package/tasks/init/misc
+silly asyncMap in gTP /tmp/npm-1360831475450/1360831475450-0.05167028144933283/___package.npm/package/tasks/init/misc/placeholder
+silly asyncMap in gTP /tmp/npm-1360831475450/1360831475450-0.05167028144933283/___package.npm/package/tasks/init/licenses
+silly asyncMap in gTP /tmp/npm-1360831475450/1360831475450-0.05167028144933283/___package.npm/package/tasks/init/licenses/LICENSE-GPL
+silly asyncMap in gTP /tmp/npm-1360831475450/1360831475450-0.05167028144933283/___package.npm/package/tasks/init/licenses/LICENSE-MIT
+silly asyncMap in gTP /tmp/npm-1360831475450/1360831475450-0.05167028144933283/___package.npm/package/tasks/init/gruntfile
+silly asyncMap in gTP /tmp/npm-1360831475450/1360831475450-0.05167028144933283/___package.npm/package/tasks/init/gruntfile/root
+silly asyncMap in gTP /tmp/npm-1360831475450/1360831475450-0.05167028144933283/___package.npm/package/tasks/init/gruntfile/root/grunt.js
+silly asyncMap in gTP /tmp/npm-1360831475450/1360831475450-0.05167028144933283/___package.npm/package/tasks/init/node
+silly asyncMap in gTP /tmp/npm-1360831475450/1360831475450-0.05167028144933283/___package.npm/package/tasks/init/node/rename.json
+silly asyncMap in gTP /tmp/npm-1360831475450/1360831475450-0.05167028144933283/___package.npm/package/tasks/init/node/root
+silly asyncMap in gTP /tmp/npm-1360831475450/1360831475450-0.05167028144933283/___package.npm/package/tasks/init/node/root/grunt.js
+silly asyncMap in gTP /tmp/npm-1360831475450/1360831475450-0.05167028144933283/___package.npm/package/tasks/init/node/root/README.md
+silly asyncMap in gTP /tmp/npm-1360831475450/1360831475450-0.05167028144933283/___package.npm/package/tasks/init/node/root/.npmignore
+silly asyncMap in gTP /tmp/npm-1360831475450/1360831475450-0.05167028144933283/___package.npm/package/tasks/init/node/root/lib
+silly asyncMap in gTP /tmp/npm-1360831475450/1360831475450-0.05167028144933283/___package.npm/package/tasks/init/node/root/lib/name.js
+silly asyncMap in gTP /tmp/npm-1360831475450/1360831475450-0.05167028144933283/___package.npm/package/tasks/init/node/root/test
+silly asyncMap in gTP /tmp/npm-1360831475450/1360831475450-0.05167028144933283/___package.npm/package/tasks/init/node/root/test/name_test.js
+silly asyncMap in gTP /tmp/npm-1360831475450/1360831475450-0.05167028144933283/___package.npm/package/tasks/init/commonjs
+silly asyncMap in gTP /tmp/npm-1360831475450/1360831475450-0.05167028144933283/___package.npm/package/tasks/init/commonjs/rename.json
+silly asyncMap in gTP /tmp/npm-1360831475450/1360831475450-0.05167028144933283/___package.npm/package/tasks/init/commonjs/root
+silly asyncMap in gTP /tmp/npm-1360831475450/1360831475450-0.05167028144933283/___package.npm/package/tasks/init/commonjs/root/grunt.js
+silly asyncMap in gTP /tmp/npm-1360831475450/1360831475450-0.05167028144933283/___package.npm/package/tasks/init/commonjs/root/README.md
+silly asyncMap in gTP /tmp/npm-1360831475450/1360831475450-0.05167028144933283/___package.npm/package/tasks/init/commonjs/root/.npmignore
+silly asyncMap in gTP /tmp/npm-1360831475450/1360831475450-0.05167028144933283/___package.npm/package/tasks/init/commonjs/root/lib
+silly asyncMap in gTP /tmp/npm-1360831475450/1360831475450-0.05167028144933283/___package.npm/package/tasks/init/commonjs/root/lib/name.js
+silly asyncMap in gTP /tmp/npm-1360831475450/1360831475450-0.05167028144933283/___package.npm/package/tasks/init/commonjs/root/test
+silly asyncMap in gTP /tmp/npm-1360831475450/1360831475450-0.05167028144933283/___package.npm/package/tasks/init/commonjs/root/test/name_test.js
+silly asyncMap in gTP /tmp/npm-1360831475450/1360831475450-0.05167028144933283/___package.npm/package/tasks/init/gruntplugin
+silly asyncMap in gTP /tmp/npm-1360831475450/1360831475450-0.05167028144933283/___package.npm/package/tasks/init/gruntplugin/rename.json
+silly asyncMap in gTP /tmp/npm-1360831475450/1360831475450-0.05167028144933283/___package.npm/package/tasks/init/gruntplugin/root
+silly asyncMap in gTP /tmp/npm-1360831475450/1360831475450-0.05167028144933283/___package.npm/package/tasks/init/gruntplugin/root/grunt.js
+silly asyncMap in gTP /tmp/npm-1360831475450/1360831475450-0.05167028144933283/___package.npm/package/tasks/init/gruntplugin/root/README.md
+silly asyncMap in gTP /tmp/npm-1360831475450/1360831475450-0.05167028144933283/___package.npm/package/tasks/init/gruntplugin/root/.npmignore
+silly asyncMap in gTP /tmp/npm-1360831475450/1360831475450-0.05167028144933283/___package.npm/package/tasks/init/gruntplugin/root/tasks
+silly asyncMap in gTP /tmp/npm-1360831475450/1360831475450-0.05167028144933283/___package.npm/package/tasks/init/gruntplugin/root/tasks/name.js
+silly asyncMap in gTP /tmp/npm-1360831475450/1360831475450-0.05167028144933283/___package.npm/package/tasks/init/gruntplugin/root/test
+silly asyncMap in gTP /tmp/npm-1360831475450/1360831475450-0.05167028144933283/___package.npm/package/tasks/init/gruntplugin/root/test/name_test.js
+silly asyncMap in gTP /tmp/npm-1360831475450/1360831475450-0.05167028144933283/___package.npm/package/tasks/init/gruntplugin/root/bin
+silly asyncMap in gTP /tmp/npm-1360831475450/1360831475450-0.05167028144933283/___package.npm/package/tasks/init/gruntplugin/root/bin/name
+silly asyncMap in gTP /tmp/npm-1360831475450/1360831475450-0.05167028144933283/___package.npm/package/tasks/init/jquery
+silly asyncMap in gTP /tmp/npm-1360831475450/1360831475450-0.05167028144933283/___package.npm/package/tasks/init/jquery/rename.json
+silly asyncMap in gTP /tmp/npm-1360831475450/1360831475450-0.05167028144933283/___package.npm/package/tasks/init/jquery/root
+silly asyncMap in gTP /tmp/npm-1360831475450/1360831475450-0.05167028144933283/___package.npm/package/tasks/init/jquery/root/grunt.js
+silly asyncMap in gTP /tmp/npm-1360831475450/1360831475450-0.05167028144933283/___package.npm/package/tasks/init/jquery/root/CONTRIBUTING.md
+silly asyncMap in gTP /tmp/npm-1360831475450/1360831475450-0.05167028144933283/___package.npm/package/tasks/init/jquery/root/README.md
+silly asyncMap in gTP /tmp/npm-1360831475450/1360831475450-0.05167028144933283/___package.npm/package/tasks/init/jquery/root/src
+silly asyncMap in gTP /tmp/npm-1360831475450/1360831475450-0.05167028144933283/___package.npm/package/tasks/init/jquery/root/src/name.js
+silly asyncMap in gTP /tmp/npm-1360831475450/1360831475450-0.05167028144933283/___package.npm/package/tasks/init/jquery/root/test
+silly asyncMap in gTP /tmp/npm-1360831475450/1360831475450-0.05167028144933283/___package.npm/package/tasks/init/jquery/root/test/name.html
+silly asyncMap in gTP /tmp/npm-1360831475450/1360831475450-0.05167028144933283/___package.npm/package/tasks/init/jquery/root/test/name_test.js
+silly asyncMap in gTP /tmp/npm-1360831475450/1360831475450-0.05167028144933283/___package.npm/package/tasks/init/jquery/root/libs
+silly asyncMap in gTP /tmp/npm-1360831475450/1360831475450-0.05167028144933283/___package.npm/package/tasks/init/jquery/root/libs/jquery-loader.js
+silly asyncMap in gTP /tmp/npm-1360831475450/1360831475450-0.05167028144933283/___package.npm/package/tasks/init/jquery/root/libs/qunit
+silly asyncMap in gTP /tmp/npm-1360831475450/1360831475450-0.05167028144933283/___package.npm/package/tasks/init/jquery/root/libs/qunit/qunit.js
+silly asyncMap in gTP /tmp/npm-1360831475450/1360831475450-0.05167028144933283/___package.npm/package/tasks/init/jquery/root/libs/qunit/qunit.css
+silly asyncMap in gTP /tmp/npm-1360831475450/1360831475450-0.05167028144933283/___package.npm/package/tasks/init/jquery/root/libs/jquery
+silly asyncMap in gTP /tmp/npm-1360831475450/1360831475450-0.05167028144933283/___package.npm/package/tasks/init/jquery/root/libs/jquery/jquery.js
+silly chmod package 755
+silly chmod docs 755
+silly chmod dev 755
+silly chmod bin 755
+silly chmod lib 755
+silly chmod grunt 755
+silly chmod util 755
+silly chmod test 755
+silly chmod grunt 755
+silly chmod tasks 755
+silly chmod fixtures 755
+silly chmod util 755
+silly chmod tasks 755
+silly chmod qunit 755
+silly chmod init 755
+silly chmod misc 755
+silly chmod licenses 755
+silly chmod gruntfile 755
+silly chmod root 755
+silly chmod node 755
+silly chmod root 755
+silly chmod lib 755
+silly chmod test 755
+silly chmod commonjs 755
+silly chmod root 755
+silly chmod lib 755
+silly chmod test 755
+silly chmod gruntplugin 755
+silly chmod root 755
+silly chmod tasks 755
+silly chmod test 755
+silly chmod bin 755
+silly chmod jquery 755
+silly chmod root 755
+silly chmod src 755
+silly chmod test 755
+silly chmod libs 755
+silly chmod qunit 755
+silly chmod jquery 755
+verbose gunzed /tmp/npm-1360831475450/1360831475450-0.05167028144933283/___package.npm/package
+verbose rm'ed /tmp/npm-1360831475450/1360831475450-0.05167028144933283/package
+verbose renamed [ '/tmp/npm-1360831475450/1360831475450-0.05167028144933283/___package.npm/package',
+verbose renamed   '/tmp/npm-1360831475450/1360831475450-0.05167028144933283/package' ]
+verbose caching /tmp/npm-1360831475450/1360831475450-0.05167028144933283/package/package.json
+verbose loadDefaults grunt@0.3.17
+verbose tarball contents [ 'package', 'tmp.tgz' ]
+verbose from cache /tmp/npm-1360831475450/1360831475450-0.05167028144933283/package/package.json
+verbose pack /tmp/npm-1360831475450/1360831475450-0.05167028144933283/package
+verbose pack /tmp/npm-1360831475450/1360831475450-0.05167028144933283/package /home/unbuntu/.npm/grunt/0.3.17/package.tgz
+silly makeList /tmp/npm-1360831475450/1360831475450-0.05167028144933283/package
+silly dir, dirLen [ '/tmp/npm-1360831475450/1360831475450-0.05167028144933283/package',
+silly dir, dirLen   65 ]
+verbose tarball /home/unbuntu/.npm/grunt/0.3.17/package.tgz
+verbose parent /tmp/npm-1360831475450/1360831475450-0.05167028144933283/package
+verbose mkdir (expected) error ENOENT, no such file or directory '/home/unbuntu/.npm/grunt/0.3.17/___package.npm'
+verbose mkdir done: /home/unbuntu/.npm/grunt/0.3.17/___package.npm 755
+verbose unpack_ uid, gid [ undefined, undefined ]
+verbose unpackTarget /home/unbuntu/.npm/grunt/0.3.17/package
+silly gunzTarPerm modes [ '755', '644' ]
+silly afterUntar ok
+silly asyncMap in gTP /home/unbuntu/.npm/grunt/0.3.17/___package.npm/package
+silly asyncMap in gTP /home/unbuntu/.npm/grunt/0.3.17/___package.npm/package/grunt.js
+silly asyncMap in gTP /home/unbuntu/.npm/grunt/0.3.17/___package.npm/package/package.json
+silly asyncMap in gTP /home/unbuntu/.npm/grunt/0.3.17/___package.npm/package/README.md
+silly asyncMap in gTP /home/unbuntu/.npm/grunt/0.3.17/___package.npm/package/LICENSE-MIT
+silly asyncMap in gTP /home/unbuntu/.npm/grunt/0.3.17/___package.npm/package/.npmignore
+silly asyncMap in gTP /home/unbuntu/.npm/grunt/0.3.17/___package.npm/package/docs
+silly asyncMap in gTP /home/unbuntu/.npm/grunt/0.3.17/___package.npm/package/docs/task_qunit.md
+silly asyncMap in gTP /home/unbuntu/.npm/grunt/0.3.17/___package.npm/package/docs/task_init.md
+silly asyncMap in gTP /home/unbuntu/.npm/grunt/0.3.17/___package.npm/package/docs/getting_started.md
+silly asyncMap in gTP /home/unbuntu/.npm/grunt/0.3.17/___package.npm/package/docs/api_config.md
+silly asyncMap in gTP /home/unbuntu/.npm/grunt/0.3.17/___package.npm/package/docs/api_template.md
+silly asyncMap in gTP /home/unbuntu/.npm/grunt/0.3.17/___package.npm/package/docs/example_gruntfiles.md
+silly asyncMap in gTP /home/unbuntu/.npm/grunt/0.3.17/___package.npm/package/docs/api_log.md
+silly asyncMap in gTP /home/unbuntu/.npm/grunt/0.3.17/___package.npm/package/docs/api.md
+silly asyncMap in gTP /home/unbuntu/.npm/grunt/0.3.17/___package.npm/package/docs/api_task.md
+silly asyncMap in gTP /home/unbuntu/.npm/grunt/0.3.17/___package.npm/package/docs/toc.md
+silly asyncMap in gTP /home/unbuntu/.npm/grunt/0.3.17/___package.npm/package/docs/task_lint.md
+silly asyncMap in gTP /home/unbuntu/.npm/grunt/0.3.17/___package.npm/package/docs/plugins.md
+silly asyncMap in gTP /home/unbuntu/.npm/grunt/0.3.17/___package.npm/package/docs/task_min.md
+silly asyncMap in gTP /home/unbuntu/.npm/grunt/0.3.17/___package.npm/package/docs/helpers_directives.md
+silly asyncMap in gTP /home/unbuntu/.npm/grunt/0.3.17/___package.npm/package/docs/task_concat.md
+silly asyncMap in gTP /home/unbuntu/.npm/grunt/0.3.17/___package.npm/package/docs/contributing.md
+silly asyncMap in gTP /home/unbuntu/.npm/grunt/0.3.17/___package.npm/package/docs/README.md
+silly asyncMap in gTP /home/unbuntu/.npm/grunt/0.3.17/___package.npm/package/docs/task_server.md
+silly asyncMap in gTP /home/unbuntu/.npm/grunt/0.3.17/___package.npm/package/docs/api_fail.md
+silly asyncMap in gTP /home/unbuntu/.npm/grunt/0.3.17/___package.npm/package/docs/exit_codes.md
+silly asyncMap in gTP /home/unbuntu/.npm/grunt/0.3.17/___package.npm/package/docs/api_file.md
+silly asyncMap in gTP /home/unbuntu/.npm/grunt/0.3.17/___package.npm/package/docs/api_utils.md
+silly asyncMap in gTP /home/unbuntu/.npm/grunt/0.3.17/___package.npm/package/docs/faq.md
+silly asyncMap in gTP /home/unbuntu/.npm/grunt/0.3.17/___package.npm/package/docs/types_of_tasks.md
+silly asyncMap in gTP /home/unbuntu/.npm/grunt/0.3.17/___package.npm/package/dev
+silly asyncMap in gTP /home/unbuntu/.npm/grunt/0.3.17/___package.npm/package/dev/init.exp
+silly asyncMap in gTP /home/unbuntu/.npm/grunt/0.3.17/___package.npm/package/bin
+silly asyncMap in gTP /home/unbuntu/.npm/grunt/0.3.17/___package.npm/package/bin/grunt
+silly asyncMap in gTP /home/unbuntu/.npm/grunt/0.3.17/___package.npm/package/lib
+silly asyncMap in gTP /home/unbuntu/.npm/grunt/0.3.17/___package.npm/package/lib/grunt.js
+silly asyncMap in gTP /home/unbuntu/.npm/grunt/0.3.17/___package.npm/package/lib/grunt
+silly asyncMap in gTP /home/unbuntu/.npm/grunt/0.3.17/___package.npm/package/lib/grunt/task.js
+silly asyncMap in gTP /home/unbuntu/.npm/grunt/0.3.17/___package.npm/package/lib/grunt/help.js
+silly asyncMap in gTP /home/unbuntu/.npm/grunt/0.3.17/___package.npm/package/lib/grunt/file.js
+silly asyncMap in gTP /home/unbuntu/.npm/grunt/0.3.17/___package.npm/package/lib/grunt/cli.js
+silly asyncMap in gTP /home/unbuntu/.npm/grunt/0.3.17/___package.npm/package/lib/grunt/config.js
+silly asyncMap in gTP /home/unbuntu/.npm/grunt/0.3.17/___package.npm/package/lib/grunt/utils.js
+silly asyncMap in gTP /home/unbuntu/.npm/grunt/0.3.17/___package.npm/package/lib/grunt/option.js
+silly asyncMap in gTP /home/unbuntu/.npm/grunt/0.3.17/___package.npm/package/lib/grunt/template.js
+silly asyncMap in gTP /home/unbuntu/.npm/grunt/0.3.17/___package.npm/package/lib/grunt/fail.js
+silly asyncMap in gTP /home/unbuntu/.npm/grunt/0.3.17/___package.npm/package/lib/grunt/log.js
+silly asyncMap in gTP /home/unbuntu/.npm/grunt/0.3.17/___package.npm/package/lib/util
+silly asyncMap in gTP /home/unbuntu/.npm/grunt/0.3.17/___package.npm/package/lib/util/namespace.js
+silly asyncMap in gTP /home/unbuntu/.npm/grunt/0.3.17/___package.npm/package/lib/util/task.js
+silly asyncMap in gTP /home/unbuntu/.npm/grunt/0.3.17/___package.npm/package/lib/util/findup.js
+silly asyncMap in gTP /home/unbuntu/.npm/grunt/0.3.17/___package.npm/package/test
+silly asyncMap in gTP /home/unbuntu/.npm/grunt/0.3.17/___package.npm/package/test/grunt
+silly asyncMap in gTP /home/unbuntu/.npm/grunt/0.3.17/___package.npm/package/test/grunt/utils_test.js
+silly asyncMap in gTP /home/unbuntu/.npm/grunt/0.3.17/___package.npm/package/test/grunt/file_test.js
+silly asyncMap in gTP /home/unbuntu/.npm/grunt/0.3.17/___package.npm/package/test/grunt/template_test.js
+silly asyncMap in gTP /home/unbuntu/.npm/grunt/0.3.17/___package.npm/package/test/tasks
+silly asyncMap in gTP /home/unbuntu/.npm/grunt/0.3.17/___package.npm/package/test/tasks/init_test.js
+silly asyncMap in gTP /home/unbuntu/.npm/grunt/0.3.17/___package.npm/package/test/tasks/concat_test.js
+silly asyncMap in gTP /home/unbuntu/.npm/grunt/0.3.17/___package.npm/package/test/tasks/misc_test.js
+silly asyncMap in gTP /home/unbuntu/.npm/grunt/0.3.17/___package.npm/package/test/tasks/lint_test.js
+silly asyncMap in gTP /home/unbuntu/.npm/grunt/0.3.17/___package.npm/package/test/fixtures
+silly asyncMap in gTP /home/unbuntu/.npm/grunt/0.3.17/___package.npm/package/test/fixtures/template.txt
+silly asyncMap in gTP /home/unbuntu/.npm/grunt/0.3.17/___package.npm/package/test/fixtures/b.js
+silly asyncMap in gTP /home/unbuntu/.npm/grunt/0.3.17/___package.npm/package/test/fixtures/banner.js
+silly asyncMap in gTP /home/unbuntu/.npm/grunt/0.3.17/___package.npm/package/test/fixtures/octocat.png
+silly asyncMap in gTP /home/unbuntu/.npm/grunt/0.3.17/___package.npm/package/test/fixtures/a.js
+silly asyncMap in gTP /home/unbuntu/.npm/grunt/0.3.17/___package.npm/package/test/fixtures/banner3.js
+silly asyncMap in gTP /home/unbuntu/.npm/grunt/0.3.17/___package.npm/package/test/fixtures/banner2.js
+silly asyncMap in gTP /home/unbuntu/.npm/grunt/0.3.17/___package.npm/package/test/fixtures/lintTest.js
+silly asyncMap in gTP /home/unbuntu/.npm/grunt/0.3.17/___package.npm/package/test/fixtures/test.json
+silly asyncMap in gTP /home/unbuntu/.npm/grunt/0.3.17/___package.npm/package/test/util
+silly asyncMap in gTP /home/unbuntu/.npm/grunt/0.3.17/___package.npm/package/test/util/task_test.js
+silly asyncMap in gTP /home/unbuntu/.npm/grunt/0.3.17/___package.npm/package/test/util/namespace_test.js
+silly asyncMap in gTP /home/unbuntu/.npm/grunt/0.3.17/___package.npm/package/tasks
+silly asyncMap in gTP /home/unbuntu/.npm/grunt/0.3.17/___package.npm/package/tasks/watch.js
+silly asyncMap in gTP /home/unbuntu/.npm/grunt/0.3.17/___package.npm/package/tasks/init.js
+silly asyncMap in gTP /home/unbuntu/.npm/grunt/0.3.17/___package.npm/package/tasks/lint.js
+silly asyncMap in gTP /home/unbuntu/.npm/grunt/0.3.17/___package.npm/package/tasks/min.js
+silly asyncMap in gTP /home/unbuntu/.npm/grunt/0.3.17/___package.npm/package/tasks/qunit.js
+silly asyncMap in gTP /home/unbuntu/.npm/grunt/0.3.17/___package.npm/package/tasks/misc.js
+silly asyncMap in gTP /home/unbuntu/.npm/grunt/0.3.17/___package.npm/package/tasks/concat.js
+silly asyncMap in gTP /home/unbuntu/.npm/grunt/0.3.17/___package.npm/package/tasks/server.js
+silly asyncMap in gTP /home/unbuntu/.npm/grunt/0.3.17/___package.npm/package/tasks/test.js
+silly asyncMap in gTP /home/unbuntu/.npm/grunt/0.3.17/___package.npm/package/tasks/qunit
+silly asyncMap in gTP /home/unbuntu/.npm/grunt/0.3.17/___package.npm/package/tasks/qunit/phantom.js
+silly asyncMap in gTP /home/unbuntu/.npm/grunt/0.3.17/___package.npm/package/tasks/qunit/qunit.js
+silly asyncMap in gTP /home/unbuntu/.npm/grunt/0.3.17/___package.npm/package/tasks/qunit/phantom.json
+silly asyncMap in gTP /home/unbuntu/.npm/grunt/0.3.17/___package.npm/package/tasks/init
+silly asyncMap in gTP /home/unbuntu/.npm/grunt/0.3.17/___package.npm/package/tasks/init/gruntplugin.js
+silly asyncMap in gTP /home/unbuntu/.npm/grunt/0.3.17/___package.npm/package/tasks/init/commonjs.js
+silly asyncMap in gTP /home/unbuntu/.npm/grunt/0.3.17/___package.npm/package/tasks/init/node.js
+silly asyncMap in gTP /home/unbuntu/.npm/grunt/0.3.17/___package.npm/package/tasks/init/gruntfile.js
+silly asyncMap in gTP /home/unbuntu/.npm/grunt/0.3.17/___package.npm/package/tasks/init/jquery.js
+silly asyncMap in gTP /home/unbuntu/.npm/grunt/0.3.17/___package.npm/package/tasks/init/misc
+silly asyncMap in gTP /home/unbuntu/.npm/grunt/0.3.17/___package.npm/package/tasks/init/misc/placeholder
+silly asyncMap in gTP /home/unbuntu/.npm/grunt/0.3.17/___package.npm/package/tasks/init/licenses
+silly asyncMap in gTP /home/unbuntu/.npm/grunt/0.3.17/___package.npm/package/tasks/init/licenses/LICENSE-GPL
+silly asyncMap in gTP /home/unbuntu/.npm/grunt/0.3.17/___package.npm/package/tasks/init/licenses/LICENSE-MIT
+silly asyncMap in gTP /home/unbuntu/.npm/grunt/0.3.17/___package.npm/package/tasks/init/gruntfile
+silly asyncMap in gTP /home/unbuntu/.npm/grunt/0.3.17/___package.npm/package/tasks/init/gruntfile/root
+silly asyncMap in gTP /home/unbuntu/.npm/grunt/0.3.17/___package.npm/package/tasks/init/gruntfile/root/grunt.js
+silly asyncMap in gTP /home/unbuntu/.npm/grunt/0.3.17/___package.npm/package/tasks/init/node
+silly asyncMap in gTP /home/unbuntu/.npm/grunt/0.3.17/___package.npm/package/tasks/init/node/rename.json
+silly asyncMap in gTP /home/unbuntu/.npm/grunt/0.3.17/___package.npm/package/tasks/init/node/root
+silly asyncMap in gTP /home/unbuntu/.npm/grunt/0.3.17/___package.npm/package/tasks/init/node/root/grunt.js
+silly asyncMap in gTP /home/unbuntu/.npm/grunt/0.3.17/___package.npm/package/tasks/init/node/root/README.md
+silly asyncMap in gTP /home/unbuntu/.npm/grunt/0.3.17/___package.npm/package/tasks/init/node/root/.npmignore
+silly asyncMap in gTP /home/unbuntu/.npm/grunt/0.3.17/___package.npm/package/tasks/init/node/root/lib
+silly asyncMap in gTP /home/unbuntu/.npm/grunt/0.3.17/___package.npm/package/tasks/init/node/root/lib/name.js
+silly asyncMap in gTP /home/unbuntu/.npm/grunt/0.3.17/___package.npm/package/tasks/init/node/root/test
+silly asyncMap in gTP /home/unbuntu/.npm/grunt/0.3.17/___package.npm/package/tasks/init/node/root/test/name_test.js
+silly asyncMap in gTP /home/unbuntu/.npm/grunt/0.3.17/___package.npm/package/tasks/init/commonjs
+silly asyncMap in gTP /home/unbuntu/.npm/grunt/0.3.17/___package.npm/package/tasks/init/commonjs/rename.json
+silly asyncMap in gTP /home/unbuntu/.npm/grunt/0.3.17/___package.npm/package/tasks/init/commonjs/root
+silly asyncMap in gTP /home/unbuntu/.npm/grunt/0.3.17/___package.npm/package/tasks/init/commonjs/root/grunt.js
+silly asyncMap in gTP /home/unbuntu/.npm/grunt/0.3.17/___package.npm/package/tasks/init/commonjs/root/README.md
+silly asyncMap in gTP /home/unbuntu/.npm/grunt/0.3.17/___package.npm/package/tasks/init/commonjs/root/.npmignore
+silly asyncMap in gTP /home/unbuntu/.npm/grunt/0.3.17/___package.npm/package/tasks/init/commonjs/root/lib
+silly asyncMap in gTP /home/unbuntu/.npm/grunt/0.3.17/___package.npm/package/tasks/init/commonjs/root/lib/name.js
+silly asyncMap in gTP /home/unbuntu/.npm/grunt/0.3.17/___package.npm/package/tasks/init/commonjs/root/test
+silly asyncMap in gTP /home/unbuntu/.npm/grunt/0.3.17/___package.npm/package/tasks/init/commonjs/root/test/name_test.js
+silly asyncMap in gTP /home/unbuntu/.npm/grunt/0.3.17/___package.npm/package/tasks/init/gruntplugin
+silly asyncMap in gTP /home/unbuntu/.npm/grunt/0.3.17/___package.npm/package/tasks/init/gruntplugin/rename.json
+silly asyncMap in gTP /home/unbuntu/.npm/grunt/0.3.17/___package.npm/package/tasks/init/gruntplugin/root
+silly asyncMap in gTP /home/unbuntu/.npm/grunt/0.3.17/___package.npm/package/tasks/init/gruntplugin/root/grunt.js
+silly asyncMap in gTP /home/unbuntu/.npm/grunt/0.3.17/___package.npm/package/tasks/init/gruntplugin/root/README.md
+silly asyncMap in gTP /home/unbuntu/.npm/grunt/0.3.17/___package.npm/package/tasks/init/gruntplugin/root/.npmignore
+silly asyncMap in gTP /home/unbuntu/.npm/grunt/0.3.17/___package.npm/package/tasks/init/gruntplugin/root/tasks
+silly asyncMap in gTP /home/unbuntu/.npm/grunt/0.3.17/___package.npm/package/tasks/init/gruntplugin/root/tasks/name.js
+silly asyncMap in gTP /home/unbuntu/.npm/grunt/0.3.17/___package.npm/package/tasks/init/gruntplugin/root/test
+silly asyncMap in gTP /home/unbuntu/.npm/grunt/0.3.17/___package.npm/package/tasks/init/gruntplugin/root/test/name_test.js
+silly asyncMap in gTP /home/unbuntu/.npm/grunt/0.3.17/___package.npm/package/tasks/init/gruntplugin/root/bin
+silly asyncMap in gTP /home/unbuntu/.npm/grunt/0.3.17/___package.npm/package/tasks/init/gruntplugin/root/bin/name
+silly asyncMap in gTP /home/unbuntu/.npm/grunt/0.3.17/___package.npm/package/tasks/init/jquery
+silly asyncMap in gTP /home/unbuntu/.npm/grunt/0.3.17/___package.npm/package/tasks/init/jquery/rename.json
+silly asyncMap in gTP /home/unbuntu/.npm/grunt/0.3.17/___package.npm/package/tasks/init/jquery/root
+silly asyncMap in gTP /home/unbuntu/.npm/grunt/0.3.17/___package.npm/package/tasks/init/jquery/root/grunt.js
+silly asyncMap in gTP /home/unbuntu/.npm/grunt/0.3.17/___package.npm/package/tasks/init/jquery/root/CONTRIBUTING.md
+silly asyncMap in gTP /home/unbuntu/.npm/grunt/0.3.17/___package.npm/package/tasks/init/jquery/root/README.md
+silly asyncMap in gTP /home/unbuntu/.npm/grunt/0.3.17/___package.npm/package/tasks/init/jquery/root/src
+silly asyncMap in gTP /home/unbuntu/.npm/grunt/0.3.17/___package.npm/package/tasks/init/jquery/root/src/name.js
+silly asyncMap in gTP /home/unbuntu/.npm/grunt/0.3.17/___package.npm/package/tasks/init/jquery/root/test
+silly asyncMap in gTP /home/unbuntu/.npm/grunt/0.3.17/___package.npm/package/tasks/init/jquery/root/test/name.html
+silly asyncMap in gTP /home/unbuntu/.npm/grunt/0.3.17/___package.npm/package/tasks/init/jquery/root/test/name_test.js
+silly asyncMap in gTP /home/unbuntu/.npm/grunt/0.3.17/___package.npm/package/tasks/init/jquery/root/libs
+silly asyncMap in gTP /home/unbuntu/.npm/grunt/0.3.17/___package.npm/package/tasks/init/jquery/root/libs/jquery-loader.js
+silly asyncMap in gTP /home/unbuntu/.npm/grunt/0.3.17/___package.npm/package/tasks/init/jquery/root/libs/qunit
+silly asyncMap in gTP /home/unbuntu/.npm/grunt/0.3.17/___package.npm/package/tasks/init/jquery/root/libs/qunit/qunit.js
+silly asyncMap in gTP /home/unbuntu/.npm/grunt/0.3.17/___package.npm/package/tasks/init/jquery/root/libs/qunit/qunit.css
+silly asyncMap in gTP /home/unbuntu/.npm/grunt/0.3.17/___package.npm/package/tasks/init/jquery/root/libs/jquery
+silly asyncMap in gTP /home/unbuntu/.npm/grunt/0.3.17/___package.npm/package/tasks/init/jquery/root/libs/jquery/jquery.js
+silly chmod package 755
+verbose gunzed /home/unbuntu/.npm/grunt/0.3.17/___package.npm/package
+verbose rm'ed /home/unbuntu/.npm/grunt/0.3.17/package
+verbose renamed [ '/home/unbuntu/.npm/grunt/0.3.17/___package.npm/package',
+verbose renamed   '/home/unbuntu/.npm/grunt/0.3.17/package' ]
+verbose caching /home/unbuntu/.npm/grunt/0.3.17/package/package.json
+verbose loadDefaults grunt@0.3.17
+silly updated sha bytes 40960
+silly updated sha bytes 40960
+silly updated sha bytes 40960
+silly updated sha bytes 40960
+silly updated sha bytes 25926
+info shasum c1a18d6dde665faaab8496ab9c4d346f2fd9c18c
+info shasum /home/unbuntu/.npm/grunt/0.3.17/package.tgz
+verbose from cache /home/unbuntu/.npm/grunt/0.3.17/package/package.json
+verbose chmod /home/unbuntu/.npm/grunt/0.3.17/package.tgz 644
+verbose chown [ '/home/unbuntu/.npm/grunt/0.3.17/package.tgz', 1000, 1000 ]
+silly resolved [ { name: 'grunt',
+silly resolved     description: 'A task-based command line build tool for JavaScript projects.',
+silly resolved     version: '0.3.17',
+silly resolved     author: { name: '"Cowboy" Ben Alman', url: 'http://benalman.com/' },
+silly resolved     homepage: 'http://github.com/gruntjs/grunt',
+silly resolved     repository: { type: 'git', url: 'git://github.com/gruntjs/grunt.git' },
+silly resolved     bugs: { url: 'http://github.com/gruntjs/grunt/issues' },
+silly resolved     licenses: 
+silly resolved      [ { type: 'MIT',
+silly resolved          url: 'http://github.com/gruntjs/grunt/blob/master/LICENSE-MIT' } ],
+silly resolved     main: 'lib/grunt',
+silly resolved     bin: { grunt: 'bin/grunt' },
+silly resolved     scripts: { test: 'grunt test' },
+silly resolved     engines: { node: '>= 0.6.0' },
+silly resolved     preferGlobal: true,
+silly resolved     keywords: 
+silly resolved      [ 'async',
+silly resolved        'cli',
+silly resolved        'minify',
+silly resolved        'uglify',
+silly resolved        'build',
+silly resolved        'underscore',
+silly resolved        'unit',
+silly resolved        'test',
+silly resolved        'qunit',
+silly resolved        'nodeunit',
+silly resolved        'server',
+silly resolved        'init',
+silly resolved        'scaffold',
+silly resolved        'make',
+silly resolved        'jake',
+silly resolved        'tool' ],
+silly resolved     dependencies: 
+silly resolved      { async: '~0.1.18',
+silly resolved        colors: '~0.6.0',
+silly resolved        connect: '~2.4.4',
+silly resolved        dateformat: '1.0.2-1.2.3',
+silly resolved        'glob-whatev': '~0.1.4',
+silly resolved        hooker: '~0.2.3',
+silly resolved        jshint: '~0.9.1',
+silly resolved        nodeunit: '~0.7.4',
+silly resolved        nopt: '~1.0.10',
+silly resolved        prompt: '~0.1.12',
+silly resolved        semver: '~1.0.13',
+silly resolved        'uglify-js': '~1.3.3',
+silly resolved        underscore: '~1.2.4',
+silly resolved        'underscore.string': '~2.1.1',
+silly resolved        temporary: '~0.0.4',
+silly resolved        'gzip-js': '~0.3.1' },
+silly resolved     devDependencies: {},
+silly resolved     _id: 'grunt@0.3.17',
+silly resolved     optionalDependencies: {},
+silly resolved     _engineSupported: true,
+silly resolved     _npmVersion: '1.1.4',
+silly resolved     _nodeVersion: 'v0.6.12',
+silly resolved     _defaultsLoaded: true,
+silly resolved     dist: { shasum: 'c1a18d6dde665faaab8496ab9c4d346f2fd9c18c' },
+silly resolved     _from: 'grunt' } ]
+info into /usr/local/lib grunt@0.3.17
+info installOne grunt@0.3.17
+verbose from cache /home/unbuntu/.npm/grunt/0.3.17/package/package.json
+info unbuild /usr/local/lib/node_modules/grunt
+verbose mkdir (expected) error ENOENT, no such file or directory '/usr/local/lib/node_modules'
+verbose unpack_ uid, gid [ undefined, undefined ]
+verbose unpackTarget /usr/local/lib/node_modules/grunt
+ERR! Could not create /usr/local/lib/node_modules/___grunt.npm
+ERR! error installing grunt@0.3.17
+info unbuild /usr/local/lib/node_modules/grunt
+verbose installOne cb grunt@0.3.17
+ERR! Error: EACCES, permission denied '/usr/local/lib/node_modules'
+ERR! 
+ERR! Please try running this command again as root/Administrator.
+ERR! 
+ERR! System Linux 3.2.0-23-generic-pae
+ERR! command "node" "/usr/bin/npm" "install" "grunt" "-g"
+ERR! cwd /home/unbuntu/RubyOnRails/ModelLearningOfRails/Project_milestone_task
+ERR! node -v v0.6.12
+ERR! npm -v 1.1.4
+ERR! path /usr/local/lib/node_modules
+ERR! code EACCES
+ERR! message EACCES, permission denied '/usr/local/lib/node_modules'
+ERR! errno {}
+verbose exit [ 1, true ]

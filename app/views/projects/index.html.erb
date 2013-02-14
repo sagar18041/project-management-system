@@ -1,5 +1,12 @@
 <center><h1>Project</h1></center>
 <p style="float:right;padding-right:20px"><%= link_to "New Project", new_project_path%></p>
+
+<%= form_tag(projects_path,:method=>:get) do%>
+<%=text_field_tag :search,params[:search]%>
+<%=text_field_tag :search,"",:class=>"datepicker"%>
+<%=submit_tag "Search" %>
+<% end %>
+
 <table border=1 class="rows">
 	<tr>
 		<th>Project Id</th>
