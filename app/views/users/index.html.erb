@@ -1,5 +1,11 @@
 <center><h1>User</h1></center>
 <p align="right"><%= link_to "New User", new_user_path%></p>
+<%= form_tag(users_path,:method=>:get) do%>
+<%=text_field_tag "search[name]",(params[:search].present? ? params[:search][:name]: '')%>
+<%=text_field_tag "search[address]",(params[:search].present? ? params[:search][:address]: '')%>
+<%=submit_tag "Search" %>
+<% end %>
+
 <table border=1>
 	<tr>
 		<th>User Id</th>

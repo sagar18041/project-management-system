@@ -8,6 +8,11 @@ class Project < ActiveRecord::Base
   validates :status, :inclusion => { :in => %w(Not_Started Started In_Progress Finished),
     :message => "%{value} is not a valid status" }
   validate :end_date_less_than_start_date
+
+  scope :by_name ,lambda{|name|where("project_name like ?","%#{name}%") if name.present?}
+  scope :by_start_date ,lambda{|start|where("start_date >= ?",Date.parse(start)) if start.present?}
+  scope :by_status ,lambda{|stat|where("status like ?","%#{stat}%") if stat.present?}
+
   
   def end_date_less_than_start_date
   	if start_date > end_date

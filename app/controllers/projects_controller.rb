@@ -2,12 +2,12 @@
 class ProjectsController < ApplicationController
 	
 	def index
-		#binding.pry
 		if params[:search]
-			@projects=Project.where("project_name like ?","%#{params[:search]}%").where("start_date <= ?","%#{params[:search]}%")
+  		@projects= Project.by_name(params[:search][:name]).by_start_date(params[:search][:start_date]).by_status(params[:search][:status])
 		else
-			@projects=Project.all
-		end
+  		@projects = Project.all
+  	end
+		
 	end
 
 	def new

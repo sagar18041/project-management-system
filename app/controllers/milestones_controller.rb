@@ -18,7 +18,13 @@ class MilestonesController < ApplicationController
 	end
 
 	def index
-		@milestones=@project.milestones
+		if params[:search]
+ 			@milestones= @project.milestones.by_name(params[:search][:name]).by_start_date(params[:search][:start_date]).by_status(params[:search][:status])
+  	else
+  		@milestones=@project.milestones
+  		
+  	end
+  	#binding.pry
 	end
 
 	def destroy

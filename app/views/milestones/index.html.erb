@@ -1,5 +1,12 @@
 <center><h1>Milestones</h1></center>
 <p align="right"><%= link_to "New Milestone", new_project_milestone_path(@project)%></p>
+<%= form_tag(project_milestones_path,:method=>:get) do%>
+<%=text_field_tag "search[name]",(params[:search].present? ? params[:search][:name]: '')%>
+<%=text_field_tag "search[start_date]","",:class=>"datepicker"%>
+<%=select_tag "search[status]",options_for_select(["","Not_Started","Started","In-Progress","Finished"],:selected=>(params[:search].present? ? params[:search][:status]: ''))%>
+<%=submit_tag "Search" %>
+<% end %>
+
 <table border=1 class="rows">
 	<thead>
 	<tr>

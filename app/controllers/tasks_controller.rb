@@ -2,15 +2,12 @@ class TasksController < ApplicationController
 	before_filter :load_milestone
 	def new
 		@task=@milestone.tasks.new
-
-		@users=User.all
+		@users=@milestone.project.users
 	end
 
 	def create
-	
 		@task=@milestone.tasks.new(params[:task])
 		if @task.save
-	
 			redirect_to milestone_task_path(@milestone,@task),:notice=>"Successfully created"
 		else
 			render :action =>:new
@@ -22,9 +19,11 @@ class TasksController < ApplicationController
 	end
 
 	def index
-
-		@tasks=@milestone.tasks
-		
+		if params[:search]
+ 			@tasks= @milestone.tasks.by_name(params[:search][:name]).by_start_date(params[:search][:start_date]).by_status(params[:search][:status])
+  	else
+  		@tasks=@milestone.tasks
+  	end
 	end
 
 	def destroy
@@ -35,7 +34,7 @@ class TasksController < ApplicationController
 
 	def edit
 		@task= @milestone.tasks.find(params[:id])
-		@users=User.all
+		@users=@milestone.project.users
 	end
 
 	def update

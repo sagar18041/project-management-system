@@ -1,5 +1,5 @@
 class UsersController < ApplicationController
-		def new
+	def new
 		@user=User.new
 		@projects=Project.all
 	end
@@ -20,7 +20,12 @@ class UsersController < ApplicationController
 	end
 
 	def index
-		@users=User.all
+
+		if params[:search]
+ 			@users= User.by_name(params[:search][:name]).by_address(params[:search][:address])
+  	else
+  		@users=User.all
+  	end		
 	end
 
 	def destroy

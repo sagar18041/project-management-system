@@ -2,8 +2,9 @@
 <p style="float:right;padding-right:20px"><%= link_to "New Project", new_project_path%></p>
 
 <%= form_tag(projects_path,:method=>:get) do%>
-<%=text_field_tag :search,params[:search]%>
-<%=text_field_tag :search,"",:class=>"datepicker"%>
+<%=text_field_tag "search[name]",(params[:search].present? ? params[:search][:name]: '')%>
+<%=text_field_tag "search[start_date]","",:class=>"datepicker"%>
+<%=select_tag "search[status]",options_for_select(["","Not_Started","Started","In-Progress","Finished"],:selected=>(params[:search].present? ? params[:search][:status]: ''))%>
 <%=submit_tag "Search" %>
 <% end %>
 

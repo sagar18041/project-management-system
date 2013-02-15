@@ -19,7 +19,7 @@ group :assets do
 
   gem 'uglifier', '>= 1.0.3'
 end
-
+gem 'bcrypt-ruby', :require => 'bcrypt'
 gem 'jquery-rails'
 gem 'jquery-ui-rails'
 gem 'pry'
