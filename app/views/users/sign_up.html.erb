@@ -1,28 +1,29 @@
-<h1>Sign Up</h1>
-<%= form_for @user do |f| %>
-  <% if @user.errors.any? %>
-    <div class="error_messages">
-      <h2>Form is invalid</h2>
-      <ul>
-        <% for message in @user.errors.full_messages %>
-          <li><%= message %></li>
-        <% end %>
-      </ul>
-    </div>
-  <% end %>
-  <p>
-    <%= f.label :User_name %><br />
-    <%= f.text_field :user_name %>
-  </p>
-  <p>
-    <%= f.label :password %><br />
-    <%= f.password_field :password %>
-  </p>
-  <p>
-    <%= f.label :password_confirmation %>
-    <%= f.password_field :password_confirmation %>
-  </p>
-  <p class="button"><%= f.submit %></p>
+<center><h1>User</h1></center>
+<%= form_for(@user) do |f| %>
+<% if @user.errors.present? %>
+<ul>
+<%@user.errors.full_messages.each do |message| %>
+<li><%= message%></li>
 <% end %>
+</ul>
+<% end %>
+	<table border=1>
 
-
+		<tr>	
+			<th>User Name</th><td><%=f.text_field :user_name%></td>
+		</tr>
+		<tr>
+			<th>Address</th><td><%=f.text_field :user_address%></td>
+		</tr>
+		<tr>
+			<th>Password</th>
+			<td><%= f.password_field :password %></td>
+		</tr>
+		<tr>
+			<th>Retype-Password</th>
+			<td><%= f.password_field :password_confirmation %></td>
+		</tr>
+			<th colspan=2><%=f.submit "create"%> </th>
+		</tr>
+	</table>
+<%end%>

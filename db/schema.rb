@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130215073604) do
+ActiveRecord::Schema.define(:version => 20130215094515) do
 
   create_table "milestones", :force => true do |t|
     t.string   "name"

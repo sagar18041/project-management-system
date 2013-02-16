@@ -2,6 +2,8 @@
 class ProjectsController < ApplicationController
 	
 	def index
+		
+		
 		if params[:search]
   		@projects= Project.by_name(params[:search][:name]).by_start_date(params[:search][:start_date]).by_status(params[:search][:status])
 		else

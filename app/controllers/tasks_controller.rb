@@ -2,7 +2,7 @@ class TasksController < ApplicationController
 	before_filter :load_milestone
 	def new
 		@task=@milestone.tasks.new
-		@users=@milestone.project.users
+
 	end
 
 	def create
@@ -34,7 +34,7 @@ class TasksController < ApplicationController
 
 	def edit
 		@task= @milestone.tasks.find(params[:id])
-		@users=@milestone.project.users
+		
 	end
 
 	def update
@@ -59,8 +59,11 @@ class TasksController < ApplicationController
 
 	protected
 	def load_milestone
-		#@project=Project.find(params[:project_id])
-		#@milestone = @project.milestones.find(params[:milestone_id])
-		@milestone=Milestone.find(params[:milestone_id])
+		if params[:milestone_id]
+			@milestone=Milestone.find(params[:milestone_id])
+			@users=@milestone.project.users
+		else
+			@tasks=current_user.tasks
+		end
 	end
 end

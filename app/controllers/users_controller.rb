@@ -7,11 +7,15 @@ class UsersController < ApplicationController
 	def create
 		@user=User.new(params[:user])
 		if @user.save
-			redirect_to user_path(@user),:notice=>"Successfully created"
+			redirect_to projects_path(@user),:notice=>"Successfully logged in"
 		else
 			@projects=Project.all
 			render :action =>:new
 		end
+	end
+
+	def sign_up
+		@user=User.new
 	end
 
 	def show
@@ -49,4 +53,15 @@ class UsersController < ApplicationController
 			render :action =>:new
 		end
 	end
+	def users_tasks
+		binding.pry
+		@tasks=current_user.tasks
+		#if params[:search][:name]
+ 		#	@tasks=@tasks.find_by_name(params[:search][:name])
+ 		#elsif params[:search][:status]
+ 		#	@tasks=@tasks.find_by_status(params[:search][:status])
+   	#end		
+		
+	end
+
 end

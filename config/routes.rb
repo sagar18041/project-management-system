@@ -1,6 +1,6 @@
 ProjectMilestoneTask::Application.routes.draw do
   #post "project/create"
-  #root :to => "projects#index"
+ #root :to => "projects#index"
   #get "projects/index"
 resources :projects do
   member do
@@ -21,10 +21,13 @@ resources :milestones do
   end
 end
 
-get "users/create"
-
+root :to => "sessions#new"
+get "log_in" => "sessions#new", :as =>"log_in"
+get "sign_up" =>"users#sign_up", :as=>"sign_up"
+get "users_tasks" =>"users#users_tasks", :as=>"users_tasks" 
+get "log_out" => "sessions#destroy", :as => "log_out"
 resources :users
-
+resources :sessions
 
   
   

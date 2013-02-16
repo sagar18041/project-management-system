@@ -1,0 +1,15 @@
+<h1>Welcome to PMS</h1>
+<h1>Log in</h1>
+<%= link_to "Sign up", sign_up_path %>
+<%= form_tag sessions_path do %>
+  <p>
+    user_name<br />
+    <%= text_field_tag :user_name, params[:user_name] %>
+  </p>
+  <p>
+    password<br />
+    <%= password_field_tag :password %>
+  </p>
+  <%= submit_tag "Log in" %>
+<% end %>
+
