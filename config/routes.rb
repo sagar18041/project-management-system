@@ -24,7 +24,7 @@ end
 root :to => "sessions#new"
 get "log_in" => "sessions#new", :as =>"log_in"
 get "sign_up" =>"users#sign_up", :as=>"sign_up"
-get "users_tasks" =>"users#users_tasks", :as=>"users_tasks" 
+get "users_tasks" =>"tasks#users_tasks", :as=>"users_tasks" 
 get "log_out" => "sessions#destroy", :as => "log_out"
 resources :users
 resources :sessions

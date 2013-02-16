@@ -7,6 +7,8 @@ class User < ActiveRecord::Base
   attr_accessor :password
   scope :by_name ,lambda{|names|where("user_name like ?","%#{names}%") if names.present?}
   scope :by_address ,lambda{|address|where("user_address like ?","%#{address}%") if address.present?}
+  validates :user_name, :presence => true
+  validates :password, :presence => true
 
   before_save :encrypt_password
   

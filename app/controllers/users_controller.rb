@@ -54,7 +54,7 @@ class UsersController < ApplicationController
 		end
 	end
 	def users_tasks
-		binding.pry
+		#binding.pry
 		@tasks=current_user.tasks
 		#if params[:search][:name]
  		#	@tasks=@tasks.find_by_name(params[:search][:name])

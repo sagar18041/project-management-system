@@ -57,13 +57,22 @@ class TasksController < ApplicationController
 		end
 	end
 
+	def users_tasks
+		
+		
+		if params[:search]
+ 			@tasks= current_user.tasks.by_name(params[:search][:name]).by_start_date(params[:search][:start_date]).by_status(params[:search][:status])
+  	else
+  		@tasks=current_user.tasks
+  	end
+		# => binding.pry
+	end
+
 	protected
 	def load_milestone
 		if params[:milestone_id]
-			@milestone=Milestone.find(params[:milestone_id])
-			@users=@milestone.project.users
-		else
-			@tasks=current_user.tasks
-		end
+		@milestone=Milestone.find(params[:milestone_id])
+		@users=@milestone.project.users
+	end
 	end
 end
